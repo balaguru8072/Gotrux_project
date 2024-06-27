@@ -14,6 +14,7 @@
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -22,8 +23,18 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/map.min.css">
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/logo.png">
-
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     <style>
         .containeres {
             display: flex;
@@ -197,19 +208,55 @@
             }
         }
 
-        .mt--40{
+        .mt--40 {
             margin-top: 40px;
         }
 
-        .form-group{
+        .form-group {
             margin-bottom: 30px;
         }
 
-        .form-group input{
+        .form-group input {
             height: 70px;
             padding: 0 20px;
         }
 
+        .Explore .price-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f90;
+            padding: 5px 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .Explore .card {
+            position: relative;
+            margin: 15px;
+        }
+
+        .Explore .card-body {
+            padding: 1rem;
+        }
+
+        .Explore .btn-full-details {
+            margin-top: 10px;
+        }
+
+        .contact-contanier .contact-card {
+            background-color: #c9cacb;
+            color: black;
+            padding: 60px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-contanier .contact-card i {
+            font-size: 2em;
+            color: #00f;
+            margin-bottom: 10px;
+        }
     </style>
 
 </head>
@@ -231,7 +278,7 @@
 
             <header id="header3" class="main-header header header-fixed ">
                 <!-- Header Lower -->
-                <!-- <div class="top-bar">
+                <div class="top-bar">
                     <div class="themesflat-container">
                         <div class="row">
                             <div class="col-md-9">
@@ -239,13 +286,20 @@
                                     <li>
                                         <a href="#">
                                             <i class="icon-Group-11"></i>
-                                            <p>Hot Line: +1 800 123 456 789</p>
+                                            <p>Hot Line: +91 12345678900</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <i class="icon-Group3"></i>
-                                            <p>Mail Us: your_protect@mail.com</p>
+                                            <p>Mail Us: forklifts365@gmail.com</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-Group3"></i>
+                                            <p>Mail Us: truliftlogisticssolutions@gmail.com</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -264,13 +318,13 @@
                                     <li>
                                         <a href="#"><i class="icon-7"></i></a>
                                     </li>
-    
+
                                 </ul>
-                                
+
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="header-lower">
                     <div class="themesflat-container">
                         <div class="row">
@@ -301,7 +355,7 @@
                                                         </ul> -->
                                                     </li>
                                                     <li class="dropdown2">
-                                                        <a href="#key_features">Vehicle</a>
+                                                        <a href="#Vehicle">Vehicle</a>
                                                         <!-- <ul>
                                                             <li><a href="car-list.html">Car Listings</a></li>
                                                             <li><a href="listing-details.html">Listings Details</a></li>
@@ -447,9 +501,9 @@
                                 <span class="wow fadeInUp sub-title" data-wow-delay="100ms"
                                     data-wow-duration="2000ms">Trusted Dealer, Rental</span>
                                 <h1 class=" title-slide wow slideInUp" data-wow-delay="50ms" data-wow-duration="200ms">
-                                    Reliable Forklift and Truck Rentals Made Easy</h1>
+                                    Reliable Forklift and JCB Rentals Made Easy</h1>
                                 <p class="description wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
-                                    Rent forklifts and trucks easily with Gotrux. Enjoy fast, reliable service and
+                                    Rent forklifts and JCBs easily with Gotrux. Enjoy fast, reliable service and
                                     competitive pricing today!</p>
                                 <div class="box">
                                     <div class="btn-main wow fadeInUp" data-wow-delay="400ms"
@@ -813,7 +867,7 @@
                                     OUR APP</h2>
                             </div>
                             <p class="text-description animated" style="visibility: visible; animation-name: fadeInup;">
-                                At Gotrux, we streamline the rental process for trucks, forklifts, and
+                                At Gotrux, we streamline the rental process for JCBs, forklifts, and
                                 construction equipment, providing dependable and accessible vehicles for diverse needs.
                                 Serving
                                 industries like construction, logistics, and agriculture, we offer meticulously
@@ -829,13 +883,14 @@
                 </div>
             </div>
             <!-- Widget Tab Car Service -->
-            <div class="widget-car-service">
+            <div class="widget-car-service" id="Vehicle">
                 <div class="themesflat-container">
                     <div class="header-section tab-car-service">
                         <div class="heading-section">
                             <span class="sub-title mb-6 wow fadeInUp">Trusted Car DeAler Service</span>
                             <h2 class="title wow fadeInUp">Explore all Vehicles</h2>
                         </div>
+
                         <ul class="nav nav-pills justify-content-end" id="pills-tab-service" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-home-tab-service" data-bs-toggle="pill"
@@ -849,8 +904,181 @@
                             </li>
 
                         </ul>
+                        <p class="text-center">At Gotrux, we provide only the best vehicles, ensuring top-quality and
+                            performance. Our
+                            extensive fleet covers multiple categories, from versatile forklifts to robust JCBs,
+                            catering to all your project needs. Enjoy the convenience of easy online booking, flexible
+                            rental terms, and competitive pricing. With fast delivery and expert support, you can trust
+                            us to keep your operations running smoothly. Discover the perfect rental solution with us
+                            today!
+                        </p>
                     </div>
-                    <div class="tab-content" id="pills-tabContent">
+                    <div class="container mt-5">
+                        <div id="rvCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row Explore">
+                                        <div class="col-lg-4 col-md-6 ">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/jcb-1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">JCB</h5>
+                                                    <p class="card-text">$20/Day</p>
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/Loader-1.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$80/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$45/Day</p>
+                                                    <!-- <ul class="list-unstyled">
+                                                        <li>16.5 / 100km Mileage</li>
+                                                        <li>Kitchen, Bathroom, AC, Music</li>
+                                                    </ul> -->
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item Explore">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/jcb-1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">JCB</h5>
+                                                    <p class="card-text">$80/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/Loader-1.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$20/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$45/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item Explore">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/jcb-1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">JCB</h5>
+                                                    <p class="card-text">$80/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/Loader-1.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$20/Day</p>
+
+                                                    <a href="#" class="button_main_inner ">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$45/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#rvCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#rvCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn-main mt-5 d-flex justify-content-center">
+                        <a href="#contact" class="button_main_inner">
+                            <span>DOWNLOAD NOW</span>
+                        </a>
+                    </div>
+                    <!-- <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home-service" role="tabpanel">
                             <div class="car-list-item">
                                 <div class="tf-car-service">
@@ -2771,8 +2999,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+
             </div>
             <!-- Widget Tab Car Service -->
             <div>
@@ -2800,7 +3029,7 @@
                         <h3>Easy Booking Process</h3>
                         <p>Our user-friendly application allows customers to browse available vehicles, compare prices,
                             and book the
-                            right truck or JCB lifter in just a few clicks.</p>
+                            right JCB or JCB lifter in just a few clicks.</p>
                     </div>
                     <div class="card">
                         <img src="./assets/images/Key features/Regular maintanence.png" alt="Email Icon">
@@ -2825,7 +3054,7 @@
                         <h6>ABOUT OUR COMPANY</h6>
                         <h2 style="font-size: 2rem !important;">Simplifying Equipment Rentals with Reliability and
                             Sustainability</h2>
-                        <p>At Gotrux, our mission is to simplify the rental process for trucks ,forklift and
+                        <p>At Gotrux, our mission is to simplify the rental process for JCBs ,forklift and
                             construction
                             equipment, providing reliable and convenient access to vehicles that meet the diverse needs
                             of our
@@ -2871,7 +3100,7 @@
                     <div class="card">
                         <img src="./assets/images/How its works/browse.png" alt="Location Icon">
                         <h3>2. Browse</h3>
-                        <p>Explore our wide range of trucks and JCB lifters available for rent</p>
+                        <p>Explore our wide range of JCBs and JCB lifters available for rent</p>
                     </div>
                     <div class="card">
                         <img src="./assets/images/How its works/Book now 1.png" alt="Clock Icon">
@@ -4229,7 +4458,7 @@
                                 <span class="sub-title mb-6 wow fadeInUp">Trusted Car Delaer Service</span>
                                 <h2 class="title mb-40 wow fadeInUp">OUR APP</h2>
                                 <h3 class="title mb-40 wow fadeInUp">Download the Gotrux app </h2>
-                                <p class="description wow fadeInUp">At Gotrux, we streamline the rental process for trucks, forklifts, and construction equipment, providing dependable and accessible vehicles for diverse needs. Serving industries like construction, logistics, and agriculture, we offer meticulously maintained equipment to ensure efficiency and safety, helping businesses thrive.
+                                <p class="description wow fadeInUp">At Gotrux, we streamline the rental process for JCBs, forklifts, and construction equipment, providing dependable and accessible vehicles for diverse needs. Serving industries like construction, logistics, and agriculture, we offer meticulously maintained equipment to ensure efficiency and safety, helping businesses thrive.
                                 </p>
                             </div>
                             <div class="btn-main mt-5">
@@ -4421,7 +4650,39 @@
             <!-- Widget car Blog  v1-->
 
         </div>
-        <div class="main-content" id="contact">
+        <div class="main-content" id="contact" style="overflow-x: hidden;
+                                                        overflow-y: scroll;">
+                <div>
+                    <h2 class="text-center">Contact</h2>
+                    <div class="container contact-contanier">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="contact-card">
+                                    <i class="fas fa-headphones"></i>
+                                    <h5>Contact Phone Number</h5>
+                                    <p>+444 555 666 777</p>
+                                    <p>+222 222 222 333</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-card">
+                                    <i class="fas fa-envelope"></i>
+                                    <h5>Our Email Address</h5>
+                                    <p>forklifts365@gmail.com</p>
+                                    <p>truliftlogisticssolutions@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-card">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h5>Our Location</h5>
+                                    <p>5678 Bangla Main Road, cities</p>
+                                    <p>580 GBnagla, example 54786</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="">
                 <!-- <div class="container">
               
@@ -4432,24 +4693,29 @@
                         <!-- <ContactForm formStyle="" /> -->
                         <form className="contact-form-1" action="" onSubmit={sendEmail}>
                             <div className="form-group" style="margin-bottom: 30px;">
-                                <input type="text" name="fullname" placeholder="Your Name" required  style="height: 70px; padding: 0 20px;"/>
+                                <input type="text" name="fullname" placeholder="Your Name" required
+                                    style="height: 70px; padding: 0 20px;" />
                             </div>
 
                             <div className="form-group" style="margin-bottom: 30px;">
-                                <input type="email" name="email" placeholder="Email Address" required style="height: 70px; padding: 0 20px;"/>
+                                <input type="email" name="email" placeholder="Email Address" required
+                                    style="height: 70px; padding: 0 20px;" />
                             </div>
 
                             <div className="form-group" style="margin-bottom: 30px;">
-                                <input type="text" name="phone" placeholder="Phone Number" required style="height: 70px; padding: 0 20px;"/>
+                                <input type="text" name="phone" placeholder="Phone Number" required
+                                    style="height: 70px; padding: 0 20px;" />
                             </div>
 
 
                             <div className="form-group" style="margin-bottom: 30px;">
-                                <input type="text" name="subject" placeholder="Subject" required style="height: 70px; padding: 0 20px;"/>
+                                <input type="text" name="subject" placeholder="Subject" required
+                                    style="height: 70px; padding: 0 20px;" />
                             </div>
 
                             <div className="form-group" style="margin-bottom: 30px;">
-                                <textarea name="message" placeholder="Your Message" required style="height: 70px; padding: 0 20px;">
+                                <textarea name="message" placeholder="Your Message" required
+                                    style="height: 70px; padding: 0 20px;">
                                 </textarea>
                             </div>
 
@@ -4458,18 +4724,20 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-lg-5 mt_md--30 mt_sm--30">
+                    <div id="googleMap" class="col-lg-5 mt_md--30 mt_sm--30">
                         <div class="widget-map-contact-us">
                             <div class="themesflat-container full">
                                 <div class="map4">
-                                    <div id="map4"></div>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.23105245834!2d79.8793260295672!3d13.04798594977182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1719408401773!5m2!1sen!2sin"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* End Contact Area */}
         </div>
 
         <!-- Footer -->
@@ -4726,6 +4994,9 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
