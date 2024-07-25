@@ -935,8 +935,9 @@ input[type=checkbox]:checked + label:after {
 }
 
 .bg-footer2 {
-  background-color: #090A0A;
+  background-color: #da9e07;
 }
+
 
 .pd-t81 {
   padding-top: 81.18px;

@@ -252,35 +252,36 @@
             text-align: center;
             margin: 20px 0;
         }
+
         .contact-contanier .contact-card i {
             font-size: 2em;
             color: #00f;
             margin-bottom: 10px;
         }
-/* Custom styles for the carousel control icons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #d01818; /* Ensure background is transparent */
-    background-size: 100%, 100%;
-    border-radius: 50%;
-}
 
-.carousel-control-prev-icon {
-    background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/chevron-direction-left-round-filled-icon.png');
-}
+        /* Custom styles for the carousel control icons */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #d01818;
+            /* Ensure background is transparent */
+            background-size: 100%, 100%;
+            border-radius: 50%;
+        }
 
-.carousel-control-next-icon {
-    background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/angle-circle-arrow-right-icon.png');
-}
+        .carousel-control-prev-icon {
+            background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/chevron-direction-left-round-filled-icon.png');
+        }
 
-/* Ensure the icons maintain their original shape */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 30px;
-    height: 30px;
-}
+        .carousel-control-next-icon {
+            background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/angle-circle-arrow-right-icon.png');
+        }
 
-
+        /* Ensure the icons maintain their original shape */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 30px;
+            height: 30px;
+        }
     </style>
 
 </head>
@@ -404,7 +405,8 @@
                                                             <li><a href="blog-single.html">Blog Detail</a></li>
                                                         </ul> -->
                                                     </li>
-                                                    <li><a href="contact-us.html">App</a>
+                                                    <li><a href="https://play.google.com/store/apps/details?id=com.mindnotix.forklift"
+                                                            target="_blank">App</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -899,7 +901,8 @@
                                 equipment to ensure efficiency and safety, helping businesses thrive.</p>
                         </div>
                         <div class="btn-main mt-5">
-                            <a href="#" class="button_main_inner">
+                            <a href="https://play.google.com/store/apps/details?id=com.mindnotix.forklift"
+                                target="_blank" class="button_main_inner">
                                 <span>DOWNLOAD</span>
                             </a>
                         </div>
@@ -923,8 +926,20 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-profile-tab-service" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile-service" type="button" role="tab"
-                                    aria-selected="false">For list</button>
+                                    data-bs-target="#for_list" type="button" role="tab" aria-selected="false">Forklift
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-loader-tab-service" data-bs-toggle="pill"
+                                    data-bs-target="#loader_list" type="button" role="tab" aria-selected="false">Loader
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Catepiller-tab-service" data-bs-toggle="pill"
+                                    data-bs-target="#Catepiller_list" type="button" role="tab"
+                                    aria-selected="false">Excavator</button>
                             </li>
 
                         </ul>
@@ -937,7 +952,7 @@
                             today!
                         </p>
                     </div>
-                    <div class="container mt-5">
+                    <div class="container mt-5" id="pills-home-service">
                         <div id="rvCarousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -999,7 +1014,7 @@
                                                 <div class="price-tag">Week</div>
                                                 <div class="card-body btn-main">
                                                     <h5 class="card-title">JCB</h5>
-                                                    <p class="card-text">$80/Day</p>
+                                                    <p class="card-text">$560/Week</p>
 
                                                     <a href="#" class="button_main_inner">Full
                                                         Details</a>
@@ -1014,7 +1029,7 @@
                                                 <div class="price-tag">Week</div>
                                                 <div class="card-body btn-main">
                                                     <h5 class="card-title">Truck</h5>
-                                                    <p class="card-text">$20/Day</p>
+                                                    <p class="card-text">$140/Week</p>
 
                                                     <a href="#" class="button_main_inner">Full
                                                         Details</a>
@@ -1029,7 +1044,7 @@
                                                 <div class="price-tag">week</div>
                                                 <div class="card-body btn-main">
                                                     <h5 class="card-title">Forklift</h5>
-                                                    <p class="card-text">$45/Day</p>
+                                                    <p class="card-text">$315/Week</p>
 
                                                     <a href="#" class="button_main_inner">Full
                                                         Details</a>
@@ -1047,7 +1062,7 @@
                                                 <div class="price-tag">Month</div>
                                                 <div class="card-body btn-main">
                                                     <h5 class="card-title">JCB</h5>
-                                                    <p class="card-text">$80/Day</p>
+                                                    <p class="card-text">$2400/Month</p>
 
                                                     <a href="#" class="button_main_inner">Full
                                                         Details</a>
@@ -1062,7 +1077,7 @@
                                                 <div class="price-tag">Month</div>
                                                 <div class="card-body btn-main">
                                                     <h5 class="card-title">Truck</h5>
-                                                    <p class="card-text">$20/Day</p>
+                                                    <p class="card-text">$600/Month</p>
 
                                                     <a href="#" class="button_main_inner ">Full
                                                         Details</a>
@@ -1077,7 +1092,7 @@
                                                 <div class="price-tag">Month</div>
                                                 <div class="card-body btn-main">
                                                     <h5 class="card-title">Forklift</h5>
-                                                    <p class="card-text">$45/Day</p>
+                                                    <p class="card-text">$1350/Month</p>
 
                                                     <a href="#" class="button_main_inner">Full
                                                         Details</a>
@@ -1087,12 +1102,496 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#rvCarousel" role="button" data-slide="prev" style="margin-left: -100px;">
+                            <a class="carousel-control-prev" href="#rvCarousel" role="button" data-slide="prev"
+                                style="margin-left: -100px;">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#rvCarousel" role="button" data-slide="next" style="margin-right: -60px;">
+                            <a class="carousel-control-next" href="#rvCarousel" role="button" data-slide="next"
+                                style="margin-right: -60px;">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container mt-5" id="for_list" style="display: none;">
+                        <h1>Forklift</h1>
+                        <div id="rvCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row Explore">
+                                        <div class="col-lg-6 col-md-6 ">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/fork lift1.png" class="card-img-top" alt="JCB"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$20/Day</p>
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--<div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/Loader-1.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$80/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/forklift2.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$45/Day</p>
+                                                    <!-- <ul class="list-unstyled">
+                                                        <li>16.5 / 100km Mileage</li>
+                                                        <li>Kitchen, Bathroom, AC, Music</li>
+                                                    </ul> -->
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="carousel-item Explore">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/fork lift1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$560/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/Loader-1.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$140/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/forklift2.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$315/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item Explore">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/fork lift1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$2400/Month</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/Loader-1.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$600/Month</p>
+
+                                                    <a href="#" class="button_main_inner ">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/forklift2.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$1350/Month</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#rvCarousel" role="button" data-slide="prev"
+                                style="margin-left: -100px;">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#rvCarousel" role="button" data-slide="next"
+                                style="margin-right: -60px;">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container mt-5" id="loader_list" style="display: none;">
+                        <h1>Loader</h1>
+                        <div id="rvCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row Explore">
+                                        <div class="col-lg-6 col-md-6 ">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/truck-1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$20/Day</p>
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" >
+                                                <img src="./assets/images/trucks 2.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$80/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$45/Day</p>
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item Explore">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/truck-1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$560/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" >
+                                                <img src="./assets/images/trucks 2.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$140/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$315/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item Explore">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/truck-1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$2400/Month</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" >
+                                                <img src="./assets/images/trucks 2.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$600/Month</p>
+
+                                                    <a href="#" class="button_main_inner ">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$1350/Month</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#rvCarousel" role="button" data-slide="prev"
+                                style="margin-left: -100px;">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#rvCarousel" role="button" data-slide="next"
+                                style="margin-right: -60px;">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container mt-5" id="Catepiller_list" style="display: none;">
+                        <!-- <h1>Catepiller list</h1> -->
+                        <div id="rvCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row Explore">
+                                        <div class="col-lg-6 col-md-6 ">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/Excavator -1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">JCB</h5>
+                                                    <p class="card-text">$20/Day</p>
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/Loader-1.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Excavator</h5>
+                                                    <p class="card-text">$80/Day</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Day</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$45/Day</p>
+                                                    
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item Explore">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/Excavator -1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">JCB</h5>
+                                                    <p class="card-text">$560/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Excavator 2.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Truck</h5>
+                                                    <p class="card-text">$140/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">week</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$315/Week</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item Explore">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" style="margin-left: 188px;">
+                                                <img src="./assets/images/Excavator -1.png" class="card-img-top"
+                                                    alt="JCB" style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">JCB</h5>
+                                                    <p class="card-text">$2400/Month</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="card" >
+                                                <img src="./assets/images/Excavator 2.png"
+                                                    class="card-img-top" alt="Truck"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Excavator</h5>
+                                                    <p class="card-text">$600/Month</p>
+
+                                                    <a href="#" class="button_main_inner ">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-4 col-md-6">
+                                            <div class="card">
+                                                <img src="./assets/images/Home section1/forklift.png"
+                                                    class="card-img-top" alt="Forklift"
+                                                    style="width: 153px; height: 153px;">
+                                                <div class="price-tag">Month</div>
+                                                <div class="card-body btn-main">
+                                                    <h5 class="card-title">Forklift</h5>
+                                                    <p class="card-text">$1350/Month</p>
+
+                                                    <a href="#" class="button_main_inner">Full
+                                                        Details</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#rvCarousel" role="button" data-slide="prev"
+                                style="margin-left: -40px;">
+                                <span class="carousel-control-prev-icon" style="margin-top: 210px;" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#rvCarousel" role="button" data-slide="next"
+                                style="margin-right: 55px;">
+                                <span class="carousel-control-next-icon" style="margin-top: 210px;" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
@@ -4676,37 +5175,37 @@
         </div>
         <div class="main-content" id="contact" style="overflow-x: hidden;
                                                         overflow-y: scroll;">
-                <div>
-                    <h2 class="text-center">Contact</h2>
-                    <div class="container contact-contanier">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="contact-card">
-                                    <i class="fas fa-headphones"></i>
-                                    <h5>Contact Phone Number</h5>
-                                    <p>+444 555 666 777</p>
-                                    <p>+222 222 222 333</p>
-                                </div>
+            <div>
+                <h2 class="text-center">Contact</h2>
+                <div class="container contact-contanier">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-card">
+                                <i class="fas fa-headphones"></i>
+                                <h5>Contact Phone Number</h5>
+                                <p>+444 555 666 777</p>
+                                <p>+222 222 222 333</p>
                             </div>
-                            <div class="col-md-4">
-                                <div class="contact-card">
-                                    <i class="fas fa-envelope"></i>
-                                    <h5>Our Email Address</h5>
-                                    <p>forklifts365@gmail.com</p>
-                                    <p>truliftlogisticssolutions@gmail.com</p>
-                                </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-card">
+                                <i class="fas fa-envelope"></i>
+                                <h5>Our Email Address</h5>
+                                <p>forklifts365@gmail.com</p>
+                                <p>truliftlogisticssolutions@gmail.com</p>
                             </div>
-                            <div class="col-md-4">
-                                <div class="contact-card">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <h5>Our Location</h5>
-                                    <p>5678 Bangla Main Road, cities</p>
-                                    <p>580 GBnagla, example 54786</p>
-                                </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h5>Our Location</h5>
+                                <p>5678 Bangla Main Road, cities</p>
+                                <p>580 GBnagla, example 54786</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             <div class="">
                 <!-- <div class="container">
               
@@ -4851,9 +5350,6 @@
                     </div>
                 </div>
                 <div class="row footer-bottom">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
-                        <p class="coppy-right">Made with ❤️ by <a href="#">Themesflat</a></p>
-                    </div>
                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
                         <ul class="social-icon">
                             <li>
@@ -5019,8 +5515,52 @@
     <script src="assets/js/main.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#pills-home-tab-service').on('click', function () {
+                $('#pills-home-service').show();
+                $('#for_list').hide();
+                $('#loader_list').hide();
+                $('#Catepiller_list').hide();
+
+            });
+
+            $('#pills-profile-tab-service').on('click', function () {
+                $('#for_list').show();
+                $('#pills-home-service').hide();
+                $('#loader_list').hide();
+                $('#Catepiller_list').hide();
+            });
+
+            $('#pills-loader-tab-service').on('click', function () {
+                $('#loader_list').show();
+                $('#pills-home-service').hide();
+                $('#for_list').hide();
+                $('#Catepiller_list').hide();
+
+            });
+
+            $('#pills-Catepiller-tab-service').on('click', function () {
+                $('#Catepiller_list').show();
+                $('#loader_list').hide();
+                $('#pills-home-service').hide();
+                $('#for_list').hide();
+            });
+
+
+            // Ensure the correct content is displayed on page load
+            $('#pills-home-service').show();
+            $('#for_list').hide();
+            $('#loader_list').hide();
+            $('#Catepiller_list').hide();
+
+        });
+    </script>
 </body>
 
 </html>
